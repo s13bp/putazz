@@ -37,12 +37,12 @@
     --bs-gray-700: #495057;
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
-    --bs-primary: #fe0000;
+    --bs-primary: #258fff;
     --bs-secondary: #6c757d;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
+    --bs-danger: #0062ff;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
     --bs-primary-rgb: 13, 110, 253;
@@ -65,7 +65,7 @@
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
-    --bs-body-bg: #fff;
+    --bs-body-bg: #2d2d2d;
 }
 
 *,
@@ -27277,7 +27277,8 @@ body.dark-bg {
 }
 
 body.light-bg {
-    background: #f5f5f5;
+    background: #121212;
+    color: white;
 }
 
 h1,
@@ -27287,7 +27288,7 @@ h4,
 h5,
 h6 {
     font-family: "Inter", sans-serif;
-    color: #f5f5f5;
+    color: white;
 }
 
 h1,
@@ -27503,7 +27504,7 @@ button {
 .primary-btn a {
     padding: 13px 30px;
     display: inline-block;
-    background: linear-gradient(92.29deg, #f00501 -9.05%, #b43432 103.12%);
+    background: blue;
     font-size: 14px;
     color: #fff;
     font-family: "Inter", sans-serif;
@@ -27513,8 +27514,12 @@ button {
     overflow: hidden;
     vertical-align: middle;
     z-index: 1;
+    transition: all .4s ease-in-out;
 }
-
+.primary-btn a:hover {
+    background: red;
+    color:black;
+}
 .primary-btn a::before {
     content: "";
     position: absolute;
@@ -27529,7 +27534,7 @@ button {
     opacity: 0;
 }
 
-.primary-btn a:hover::before {
+. a:hover::before {
     opacity: 1;
 }
 
@@ -27556,7 +27561,7 @@ button {
 }
 
 .btn.np-primary-btn {
-    background-image: linear-gradient(92.29deg, #f00501 -9.05%, #b43432 103.12%);
+    background: var(--bs-blue);
     z-index: 1;
     overflow: hidden;
 }
@@ -27625,7 +27630,7 @@ button {
     bottom: -10px;
     width: 96%;
     height: 100%;
-    background: linear-gradient(92.29deg, #f00501 -9.05%, #b43432 103.12%);
+    background: blue;
     border-radius: 5px;
     opacity: 0.7;
     -webkit-filter: blur(25px);
@@ -28696,7 +28701,7 @@ button {
 .action-btns a.btn-link:hover,
 .navbar-dark.sticky-header.affix .main-menu li a.nav-link:hover,
 .navbar-dark.sticky-header.affix .action-btns a.btn-link:hover {
-    color: #cb0753;
+    color: blue;
 }
 
 .dropdown-grid-item a.dropdown-link {
@@ -38224,7 +38229,7 @@ ul.np-author-list li+li {
 .light-bg h4,
 .light-bg h5,
 .light-bg h6 {
-    color: #1c1f26;
+    color: white;
 }
 
 .light-bg span,
@@ -38290,7 +38295,7 @@ ul.np-author-list li+li {
 }
 
 .light-bg .hero-feature-product .hfp-left .rewards-n-ticket .icon-wrapper span {
-    background: rgba(168, 179, 207, 0.2);
+    background: rgba(8, 179, 207, 0.2);
 }
 
 .light-bg .hero-feature-product .hfp-left .rewards-n-ticket .icon-wrapper span svg path {
