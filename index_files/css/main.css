@@ -124,8 +124,11 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
+    font-weight: 100;
+    line-height: 50px;
+    font-family: saiyan !important;
+    color: #0096e1 !important;
+    letter-spacing: 3px;
 }
 
 .h1,
@@ -39023,3 +39026,8 @@ ul.np-author-list li+li {
 /*# sourceMappingURL=scss */
 
 /*# sourceMappingURL=main.css.map */
+
+@font-face {
+    font-family: 'saiyan';
+    src: url('/Saiyan-Sans.ttf');
+    }
