@@ -124,11 +124,8 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-weight: 100;
-    line-height: 50px;
-    font-family: saiyan !important;
-    color: #0096e1 !important;
-    letter-spacing: 3px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .h1,
@@ -27290,8 +27287,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Inter", sans-serif;
-    color: white;
+    font-family: saiyan;
+    letter-spacing: 4px;
+    color: var(--bs-white) ;
 }
 
 h1,
