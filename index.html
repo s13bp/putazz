@@ -26,45 +26,12 @@
 
     <!--custom css-->
     <link rel="stylesheet" href="index_files/css/custom.css">
-<style>
-*{
-		margin:0;
-		padding: 0;
-		cursor: none;
-	}
-
-	.cursor{
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		position: absolute;
-		transform: scale(1);
-		background-color: white;
-		mix-blend-mode: difference;
-		transition-timing-function: ease-out;
-		transition-duration: 50ms;
-	}
-
-	.cursor2{
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		position: absolute;
-		transform: scale(3);
-		background-color: gray;
-		opacity: 0.5;
-		transition-timing-function: ease-out;
-		transition-duration: 200ms;
-	}
-
-</style>
 
 </head>
 
 <body class="light-bg">
 
-    <div class="cursor"></div>
-    <div class="cursor2"></div>
+
             
     <!-- ScrollTop Button -->
 
@@ -251,7 +218,9 @@
 
 
                             <span class="np-welcome-circle position-absolute zindex--1"></span>
-                            <img src="asasa.png" alt="not found" class="img-fluid">
+                            <model-viewer style="min-height: 90vh; min-width: 50vw; justify-items: left;" auto-rotate ar src="shenron_dragon_ball.glb">
+
+                            </model-viewer>
 
 
 
@@ -373,7 +342,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+        <!--google fonts    <div class="container">
                 <div class="row justify-content-center">
                     <div >
 
@@ -384,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->  
         </section>
         <!--collection area end-->
 
@@ -440,18 +409,7 @@
     <script src="index_files/js/parallax.min.js"></script>
     <script src="index_files/js/app.js"></script>
     <!--endbuild-->
-    <script>
-        const cursor = document.querySelector('.cursor');
-	document.addEventListener('mousemove', e => {
-		cursor.setAttribute("style", " top: "+(e.pageY -10)+"px; left: "+(e.pageX -10)+"px; ")
-	});
 
-	const cursor2 = document.querySelector('.cursor2');
-	document.addEventListener('mousemove', e => {
-		cursor2.setAttribute("style", " top: "+(e.pageY -10)+"px; left: "+(e.pageX -10)+"px; ")
-	});
-
-    </script>
 </body>
 
 </html>
